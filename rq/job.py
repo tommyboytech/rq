@@ -23,7 +23,7 @@ from .utils import (get_version, import_attribute, parse_timeout, str_to_date,
 
 # Serialize pickle dumps using the highest pickle protocol (binary, default
 # uses ascii)
-dumps = partial(pickle.dumps, protocol=pickle.HIGHEST_PROTOCOL)
+dumps = partial(pickle.dumps, protocol=2)
 loads = pickle.loads
 
 
